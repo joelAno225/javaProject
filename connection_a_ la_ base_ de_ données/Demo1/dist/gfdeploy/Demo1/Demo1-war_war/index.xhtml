@@ -9,6 +9,18 @@
         #{helloController.display()}
         <br></br>
          #{helloController.calculate()}
+         <h3>Product Information</h3>
+         <h:panelGrid columns ="2" cellpadding ="2"  cellspacing ="2">
+             
+             <h:outputText value="Id"> </h:outputText>
+             <h:outputText value="#{productController.find().id}"> </h:outputText>
+             
+             <h:outputText value="name"> </h:outputText>
+             <h:outputText value="#{productController.find().name}"> </h:outputText>
+             
+             <h:outputText value="price"> </h:outputText>
+             <h:outputText value="#{productController.find().price}"> </h:outputText>
+         </h:panelGrid>
     </h:body>
 </html>
 
