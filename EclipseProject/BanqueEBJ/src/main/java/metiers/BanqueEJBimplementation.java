@@ -55,6 +55,8 @@ public class BanqueEJBimplementation implements BanqueLocal ,BanqueRemote {
 
 	@Override
 	public void virement(Long cp1, Long cp2, double mt) {
+		
+		//code metier
 		retirer(cp1, mt);
 		verser(cp2, mt);
 		
