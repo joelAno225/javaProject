@@ -13,7 +13,7 @@ import metiers.entites.Compte;
 @Stateless(name = "BK")
 public class BanqueEJBimplementation implements BanqueLocal ,BanqueRemote {
 	
-	@PersistenceContext(unitName = "BanqueEJB")
+	@PersistenceContext //(unitName = "BanqueEJB")
 	
 	private EntityManager em;
 	

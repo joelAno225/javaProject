@@ -5,10 +5,6 @@ import java.lang.Long;
 import java.util.Date;
 import javax.persistence.*;
 
-/**
- * Entity implementation class for Entity: Compte
- *
- */
 @Entity
 
 public class Compte implements Serializable {
