@@ -1,8 +1,8 @@
 endpoint.name=client-endpoint
-remote.connectionprovider.create.option.org.xnio.Option.SSL_ENABLED=false
-remote.connections = default
-remote.connection.default.host= 127.0.0.1
-remote.connection.default.port= 4447
-remote.connection.default.connect.option.org.xnioOption.SASL_POLICY_NOANONYMOUS=false
-remote.connection.default.username= 
-remote.connection.default.password=
+remote.connectionprovider.create.options.org.xnio.Options.SSL_ENABLED=false
+remote.connections=default
+remote.connections.default.host=127.0.0.1
+remote.connections.default.port=8080
+remote.connections.default.connect.options.org.xnio.Options.SASL_POLICY_NOANONYMOUS=false
+remote.connection.default.username=admin
+remote.connections.default.password=
