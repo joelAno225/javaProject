@@ -1,0 +1,69 @@
+public class Crud {
+public static void main(String[] args) {
+// Création d'un tableau pour stocker les données
+String[] data = new String[10];
+
+ // Création d'un objet Scanner pour lire les entrées utilisateur
+ Scanner scanner = new Scanner(System.in);
+  
+  // Boucle infinie pour permettre à l'utilisateur de faire plusieurs opérations CRUD
+ while (true) {
+     System.out.println("Sélectionnez une opération CRUD :");
+     System.out.println("1. Créer une donnée");
+     System.out.println("2. Lire une donnée");
+     System.out.println("3. Modifier une donnée");
+     System.out.println("4. Supprimer une donnée");
+     System.out.println("5. Quitter");
+     
+     // Lecture de l'opération sélectionnée par l'utilisateur
+     int operation = scanner.nextInt();
+     
+     // Selon l'opération sélectionnée, exécute la bonne méthode
+     switch (operation) {
+        case 1:
+           createData(data, scanner);
+           break;
+        case 2:
+           readData(data, scanner);
+           break;
+        case 3:
+           updateData(data, scanner);
+           break;
+        case 4:
+           deleteData(data, scanner);
+           break;
+        case 5:
+           // Quitter le programme
+           return;
+        default:
+           System.out.println("Opération non valide, veuillez réessayer");
+           break;
+     }
+ }
+
+
+  // Méthode pour créer une donnée
+public static void createData(String[] data, Scanner scanner) {
+// Demande à l'utilisateur de saisir une nouvelle donnée
+  System.out.println("Saisissez une nouvelle donnée :");
+  String newData = scanner.nextLine();
+
+
+
+  // Parcours le tableau pour trouver une case vide pour stocker la nouvelle donnée
+  for (int i = 0; i < data.length; i++) {
+     if (data[i] == null) {
+        // Stocke la nouvelle donnée dans la première case vide trouvée
+        data[i] = newData;
+        System.out.println("Donnée ajoutée avec succès");
+        return;
+     }
+  }
+  
+  // Si aucune case vide n'a été trouvée, affiche un message d'erreur
+  System.out.println("Erreur : tableau plein, impossible d'ajouter une nouvelle donnée");
+}
+
+
+// Méthode pour lire une donnée
+public static void readData(String)
